@@ -13,16 +13,7 @@
   - [MODIS MCD43A4 NDSI, Google Earth Engine](https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A4_006_NDSI?hl=es-419) (fuente de referencia para el índice de nieve).
   - [Copernicus DEM, Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/catalog).
   - [Ugalde et al. (2025), *Ice loss detection of glacierets in the Desert and Central Andes of Chile between 2018 and 2023*](https://doi.org/10.3389/feart.2025.1565290).
-  - **Muestra descargada:** no; se debe registrar al iniciar la PEP 1.
+  - **Muestra descargada:** no.
 - **Qué hará el agente:** Recorrerá el inventario polígono por polígono y calculará el cambio interanual en los embeddings y en el NDSI. Comparará ambas señales con los glaciaretes reportados como desaparecidos por Ugalde et al. (2025). Redactará una ficha por glaciarete con cifras, evidencia, fuentes, herramientas y advertencias de calidad.
-- **Versión mínima para la PEP 1:** Una cuenca de prueba, preferentemente Maipo alto: cálculo de NDSI y cambio en embeddings por glaciarete, sin agente autónomo. La entrega es el 12 de noviembre.
+- **Versión mínima para la PEP 1:** Una cuenca de prueba: cálculo de NDSI y cambio en embeddings por glaciarete, sin agente autónomo. La entrega es el 12 de noviembre.
 - **Riesgo principal y cómo lo vamos a enfrentar:** Los glaciaretes pequeños pueden ocupar sólo unos pocos píxeles de 10 m y no producir una señal robusta. Se registrará el número de píxeles válidos, se definirá un umbral mínimo y los casos insuficientes se marcarán como no concluyentes, sin clasificarlos automáticamente como desaparecidos.
-
-## Plan de entregas
-
-- **PEP 1 — 12 de noviembre:** una cuenca, NDSI y cambio en embeddings por glaciarete, sin agente.
-- **PEP 2 — 7 de enero:** agente que procesa el inventario completo de la cuenca, genera fichas por glaciarete y compara los resultados con el estudio publicado.
-
-## Verificación y herramientas del curso
-
-La verificación comparará los resultados con los glaciaretes que Ugalde et al. (2025) reportan como desaparecidos. Cada ficha deberá citar las herramientas que produjeron sus cifras. El proyecto aplica ráster, interacciones ráster-vector, estadística zonal y Google Earth Engine.

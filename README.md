@@ -10,6 +10,7 @@
   - [Inventario Público de Glaciares 2022, DGA](https://dga.mop.gob.cl/inventario-publico-glaciares/).
   - [Satellite Embedding V1 / AlphaEarth, Google Earth Engine](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL) (requiere cuenta de Earth Engine y acceso habilitado).
   - [Sentinel-2 L2A, Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/catalog) (colección disponible en el catálogo).
+  - [MODIS MCD43A4 NDSI, Google Earth Engine](https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A4_006_NDSI?hl=es-419) (fuente de referencia para el índice de nieve).
   - [Copernicus DEM, Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/catalog).
   - [Ugalde et al. (2025), *Ice loss detection of glacierets in the Desert and Central Andes of Chile between 2018 and 2023*](https://doi.org/10.3389/feart.2025.1565290).
   - **Muestra descargada:** no; se debe registrar al iniciar la PEP 1.

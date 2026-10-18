@@ -1,6 +1,6 @@
 # Procedencia de datos: C1 Glaciaretes que desaparecen
 
-Marquen cada fuente como abierta (fecha y quién) **solo después de abrirla de verdad**. Lo que diga «verificar» se completa con lo que muestre el archivo.
+Marquen cada fuente como abierta (fecha ). Lo que diga «verificar» se completa con lo que muestre el archivo.
 
 ## 1. Inventario Público de Glaciares 2022 (IPG2022), DGA
 

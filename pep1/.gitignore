@@ -1,0 +1,13 @@
+# Datos pesados: se bajan con los scripts (ver README)
+datos/crudos/
+datos/cache/
+*.tif
+# Credenciales: NUNCA al repositorio
+*.json.key
+service-account*.json
+.config/
+credentials
+.env
+__pycache__/
+.pytest_cache/
+.venv/

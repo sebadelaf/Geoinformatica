@@ -1,0 +1,5 @@
+cifra,camino_1,valor_1,camino_2,valor_2,dif_relativa_pct
+area_total_km2,GeoPandas EPSG:32719,20.31860,pyproj.Geod WGS84,20.33074,-0.05974
+area_total_km2,GeoPandas EPSG:32719,20.31860,Atributo AREA_KM2 del IPG2022 (DGA),20.31860,-0.00000
+frac_nieve CL105706051@ 2023,Planetary Computer (n=623),0.50880,Earth Engine (n=624),0.50321,1.11185
+cambio_emb CL105706051@ 2020-2023,reduceRegions (n=2494),0.03481,NumPy por píxel (n=2494),0.03481,-0.01330

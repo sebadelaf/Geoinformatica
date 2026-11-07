@@ -1,0 +1,17 @@
+# Probado con Python 3.13 (sirve 3.10 o superior). Instalar con: pip install -r requirements.txt
+geopandas>=1.0
+pyogrio>=0.9
+rasterio>=1.4
+shapely>=2.0
+pyproj>=3.6
+numpy>=1.26
+pandas>=2.1
+xarray>=2024.1
+dask>=2024.1
+matplotlib>=3.8
+pytest>=8.0
+pystac-client>=0.8
+planetary-computer>=1.0
+odc-stac>=0.3.10
+earthengine-api>=1.0
+openpyxl>=3.1

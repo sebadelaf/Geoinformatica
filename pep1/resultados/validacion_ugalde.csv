@@ -1,0 +1,18 @@
+id_glaciar,area_ipg_km2_ugalde,Vanishment,Comparison,Gl_bed,IMAG_First,Fecha_IMAG,area_km2,pix20_teoricos,area_nieve_m2_2018,area_nieve_m2_2019,area_nieve_m2_2020,area_nieve_m2_2021,area_nieve_m2_2022,area_nieve_m2_2023,area_nieve_m2_2024,n_pix_validos_2018,n_pix_validos_2019,n_pix_validos_2020,n_pix_validos_2021,n_pix_validos_2022,n_pix_validos_2023,n_pix_validos_2024,cambio_emb_2020_2023,n_pix10_emb,perdida_nieve_m2_2020_2023,area_min_inicial_m2,area_min_final_m2,perdida_min_m2,no_concluyente,desaparecido_ugalde
+CL105700210@,0.00997044799245,Presumably vanished,Reduced,Regolith,Planet Scope,2020-02-03 00:00:00,0.0100,24.9261,2000,4000,0,6000,0,0,6000,26,21,26,26,26,26,26,0.0169,103,0,0,0,0,False,True
+CL105701057@,0.00966384531478,Presumably vanished,Reduced,Regolith,WV03,2023-04-22 00:00:00,0.0097,24.1596,1600,2400,0,9200,0,0,7200,23,23,23,23,23,23,23,0.0186,98,0,0,0,0,False,True
+CL105701041@,0.00470856522493,Presumably vanished,Reduced,Regolith,Planet Scope,2020-02-03 00:00:00,0.0047,11.7714,2400,3200,0,4800,0,0,4800,12,12,12,12,12,12,12,0.0194,49,0,0,0,0,False,True
+CL105706082@,0.00699190901843,Presumably vanished,Reduced,Regolith,Planet Scope,2020-03-07 00:00:00,0.0070,17.4798,5600,5200,0,7600,0,1600,3200,19,19,19,19,19,19,19,0.0518,69,-1600,0,0,0,False,True
+CL105701018@,0.00253095067309,Presumably vanished,Reduced,Regolith,Maxar,2023-02-13 00:00:00,0.0025,6.3274,2400,1600,0,2000,0,0,2400,6,6,6,6,6,6,6,0.0448,26,0,0,0,0,True,True
+CL105700172A,0.0040146746978,Presumably vanished,Fragmented,Regolith,WV02,2022-05-09 00:00:00,0.0040,10.0367,0,2400,0,2800,0,0,4000,10,10,10,10,10,10,10,0.0211,40,0,0,0,0,False,True
+CL105700091B,0.00923250606079,Presumably vanished,Fragmented,Regolith,Planet Scope,2020-02-15 00:00:00,0.0092,23.0813,4000,5200,0,7200,0,0,7200,21,21,21,21,21,21,21,0.0345,95,0,0,0,0,False,True
+CL105700160D,0.00253939480057,Presumably vanished,Fragmented,Regolith,Planet Scope,2020-03-06 00:00:00,0.0025,6.3485,800,2400,0,1200,0,0,2800,7,7,7,7,7,7,7,0.0312,24,0,0,0,0,True,True
+CL105700145C,0.00257580023615,Presumably vanished,Fragmented,Regolith,Planet Scope,2020-02-15 00:00:00,0.0026,6.4395,800,2000,0,400,0,0,2000,6,6,6,6,6,6,6,0.0283,25,0,0,0,0,True,True
+CL105700080F,0.00295488983422,Entirely vanished,Fragmented,Water,Airbus,2023-01-19 00:00:00,0.0030,7.3872,0,400,0,0,0,0,400,8,8,8,8,8,8,8,0.0435,28,0,0,0,0,True,True
+CL105700080E,0.00309363621864,Presumably vanished,Fragmented,Regolith,Planet Scope,2020-03-06 00:00:00,0.0031,7.7341,0,400,0,1200,0,0,2000,8,8,8,8,8,8,8,0.0458,31,0,0,0,0,True,True
+CL105700080G,0.00231816872676,Presumably vanished,New IPG2022 glacier,Regolith,Planet Scope,2020-03-06 00:00:00,0.0023,5.7954,0,0,0,2400,0,0,2800,7,7,7,7,7,7,7,0.0513,24,0,0,0,0,True,True
+CL105700080D,0.00736963741851,Presumably vanished,Fragmented,Regolith,Planet Scope,2020-03-06 00:00:00,0.0074,18.4241,0,400,0,1200,0,0,4000,22,22,22,22,22,22,22,0.0542,74,0,0,0,0,False,True
+CL105705138B,0.0074478595593,Entirely vanished,Fragmented,Bedrock,Airbus,2023-05-19 00:00:00,0.0074,18.6196,4000,6800,0,8400,0,0,7600,21,21,21,21,21,21,21,0.0153,74,0,0,0,0,False,True
+CL105706056B,0.00471395907021,Presumably vanished,Fragmented,Regolith,GE01,2023-05-05 00:00:00,0.0047,11.7849,2800,3200,0,3600,0,0,3600,9,9,9,9,9,9,9,0.0271,47,0,0,0,0,True,True
+CL105702016C,0.00469789486911,Presumably vanished,Fragmented,Regolith,Maxar,2023-01-17 00:00:00,0.0047,11.7447,4000,2400,0,4800,0,0,3600,12,12,12,12,12,12,12,0.0200,45,0,0,0,0,False,True
+CL105703011B,0.00151364585771,Presumably vanished,Fragmented,Regolith,WV02,2022-02-27 00:00:00,0.0015,3.7841,0,0,0,1600,0,0,1600,4,4,4,4,4,4,4,0.0295,17,0,0,0,0,True,True

@@ -1,0 +1,5 @@
+senal,glaciares,VP,FP,FN,VN,sensibilidad,precision
+NDSI: área mínima 2022-2024 = 0 (todos),322,17,141,0,164,1.000,0.108
+Embedding 2020-2023 > p95 fondo = 0.0957 (todos),322,0,0,17,305,0.000,
+NDSI: área mínima 2022-2024 = 0 (concluyentes),304,9,132,0,163,1.000,0.064
+Embedding 2020-2023 > p95 fondo = 0.0957 (concluyentes),304,0,0,9,295,0.000,

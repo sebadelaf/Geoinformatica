@@ -1,7 +1,7 @@
 """Parámetros del proyecto en un solo lugar.
 
 Toda decisión espacial que aparece en el informe sale de aquí, para que el
-informe y el código no se contradigan.
+informe y el código no se contradigan. 
 """
 from pathlib import Path
 
@@ -60,4 +60,4 @@ MIN_PIX_10M = 40   # equivalente en la grilla de 10 m
 
 # Ruido de fondo de los embeddings: terreno fuera de los glaciares
 FONDO_EXCLUSION_M = 300   # se excluye este margen alrededor de cada glaciar
-FONDO_REGION_M = 2000     # región = envolvente convexa de los glaciares + 2 km
+FONDO_REGION_M = 2000     # región = envolvente convexa de los glaciares + 2 km.

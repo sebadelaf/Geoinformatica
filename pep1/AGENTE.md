@@ -19,31 +19,35 @@ Todas son deterministas: el modelo decide qué llamar y las herramientas calcula
 | `cambio_embedding` | Cambio del embedding AlphaEarth entre dos años | `id_glaciar: str`, `anio_a: int`, `anio_b: int` (2017-2024) | `cambio` (1 − coseno, 0 a 2), `n_pix`, `no_concluyente` | Grilla 10 m EPSG:32719; media no ponderada de píxeles con centro en el polígono | Implementada (lee `resultados/embedding_por_glaciar.csv`) |
 | `umbral_fondo` | Ruido del embedding en terreno sin glaciar | `anio_a: int`, `anio_b: int`, `percentil: int` | umbral (adimensional) | Región = envolvente convexa + 2 km menos glaciares + 300 m; muestreo a 30 m | Diseñada (datos en `resultados/embedding_fondo.csv`) |
 | `contexto_topografico` | Altura, pendiente y orientación | `id_glaciar: str` | `altura_m`, `pendiente_grados`, `orientacion_grados` | Copernicus DEM GLO-30, media sobre el polígono en EPSG:32719 | Diseñada |
-| `estado_segun_ugalde` | Estado del glaciar en Ugalde et al. (2025) | `id_glaciar: str` | `desaparecido`, `con_perdida`, `sin_dato` | Cruce por ID del inventario; si no hay ID, centroides a menos de una distancia declarada | Diseñada |
+| `estado_segun_ugalde` | Estado del glaciar en Ugalde et al. (2026) | `id_glaciar: str` | `vanishment` (`Entirely vanished` o `Presumably vanished`) o `no_listado` | Cruce por atributo `COD_GLA` con el material suplementario, sin cruce espacial; los 17 registros de la subcuenca 0570 cruzan con el inventario | Diseñada (lógica en `src/validar_ugalde.py`) |
 
 Reglas comunes: toda herramienta devuelve `resultado` y `traza`; si los datos no alcanzan devuelve `no_se_puede: true` con la razón. El agente no puede escribir una cifra que no esté en el `resultado` de alguna llamada.
 
 ## 3. Ejemplo de traza
 
-Pregunta: «¿Cuánta nieve o hielo perdió el glaciarete X entre 2019 y 2023?»
+Pregunta: «¿Cuánta nieve o hielo perdió el glaciarete CL105706051@ entre 2020 y 2023?»
 
 ```json
 [
   {"herramienta": "ndsi_por_glaciar",
-   "parametros": {"id_glaciar": "X", "anio": 2019},
+   "parametros": {"id_glaciar": "CL105706051@", "anio": 2020},
    "fuente": "resultados/ndsi_por_glaciar.csv",
-   "resultado": {"frac_nieve": "<cifra>", "area_nieve_m2": "<cifra>", "n_pix_validos": "<cifra>", "no_concluyente": false}},
+   "resultado": {"frac_nieve": "<cifra>", "area_nieve_m2": 182000.0, "n_pix_validos": "<cifra>", "no_concluyente": false}},
   {"herramienta": "ndsi_por_glaciar",
-   "parametros": {"id_glaciar": "X", "anio": 2023},
+   "parametros": {"id_glaciar": "CL105706051@", "anio": 2023},
    "fuente": "resultados/ndsi_por_glaciar.csv",
-   "resultado": {"frac_nieve": "<cifra>", "area_nieve_m2": "<cifra>", "n_pix_validos": "<cifra>", "no_concluyente": false}}
+   "resultado": {"frac_nieve": 0.509, "area_nieve_m2": 126800.0, "n_pix_validos": 623, "no_concluyente": false}}
 ]
 ```
 
-Respuesta del agente: «Entre 2019 y 2023 la superficie con NDSI ≥ 0,4 pasó de A a B m² (ndsi_por_glaciar, llamadas 1 y 2).» La resta A − B la hace una herramienta o queda explícita con los dos valores citados.
+Respuesta del agente: «Entre 2020 y 2023 la superficie con NDSI ≥ 0,4 del glaciarete CL105706051@ pasó de 182.000 a 126.800 m², una pérdida de 55.200 m² (ndsi_por_glaciar, llamadas 1 y 2).» La resta la hace una herramienta o queda explícita con los dos valores citados.
 
-> Reemplazar los `<cifra>` por un caso real después de correr `src/ndsi.py`: la traza del informe debe ser una salida verdadera de `herramientas.py`.
+> Los dos `<cifra>` de 2020 se llenan con la salida real de la herramienta (cada traza trae también el campo `hora`):
+>
+> ```powershell
+> python -c "import sys; sys.path.insert(0,'src'); import herramientas as h, json; print(json.dumps(h.ndsi_por_glaciar('CL105706051@', 2020), indent=1, ensure_ascii=False))"
+> ```
 
 ## 4. Set de control
 
-El borrador está en `control/preguntas_control.csv`: 16 preguntas, 4 imposibles y 2 trampas (selección por caja y CRS). Las respuestas se calculan sin agente con los scripts de `src/`; las marcadas «PENDIENTE» se llenan al correr el análisis.
+El borrador está en `control/preguntas_control.csv`: 27 preguntas, 5 imposibles y 2 trampas (selección por caja y CRS). Las respuestas se calculan sin agente con los scripts de `src/`; las marcadas «PENDIENTE» se llenan al correr el análisis.

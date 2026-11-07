@@ -32,7 +32,7 @@ Pregunta: «¿Cuánta nieve o hielo perdió el glaciarete CL105706051@ entre 202
   {"herramienta": "ndsi_por_glaciar",
    "parametros": {"id_glaciar": "CL105706051@", "anio": 2020},
    "fuente": "resultados/ndsi_por_glaciar.csv",
-   "resultado": {"frac_nieve": "<cifra>", "area_nieve_m2": 182000.0, "n_pix_validos": "<cifra>", "no_concluyente": false}},
+   "resultado": {"frac_nieve": 0.7303, "area_nieve_m2": 182000.0, "n_pix_validos": 623, "no_concluyente": false}},
   {"herramienta": "ndsi_por_glaciar",
    "parametros": {"id_glaciar": "CL105706051@", "anio": 2023},
    "fuente": "resultados/ndsi_por_glaciar.csv",
